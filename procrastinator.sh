@@ -19,7 +19,7 @@ Usage:
   Xm         Block domains for the next X minutes
   Xh         Block domains for the next X hours
   list       List the blocked domains
-  stop       Stop the blockage
+  stop       Stop the blocking
   force-stop Force the stop (usefull if the computer have been rebooted since the start) 
   -h | help  Print this help message
 "
@@ -86,7 +86,6 @@ runduration () {
 
 root () {
   if [[ $EUID -ne 0 ]]; then
-    help
     echo "This script must be run as root" 
     exit 1
   fi
