@@ -2,8 +2,8 @@
 A simple bash script to block domains for a determined duration (using `/etc/hosts` file)
 
 
-Usage  | :
----: | 
+Usage  | .
+---: | --- 
 start   | Start blocking domains
 Xm      | Block domains for the next X minutes
 Xh      | Block domains for the next X hours
