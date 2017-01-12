@@ -47,6 +47,7 @@ start () {
 stop () {
   if [ -e "$temphostfile" ]
   then
+    root
     echo "Stopping procrastinator"
     mv "$temphostfile" "$hostfile" 
   else
